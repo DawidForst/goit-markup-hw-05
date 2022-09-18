@@ -145,18 +145,16 @@ body {
   letter-spacing: 0.02em;
   color: var(--h-color);
   line-height: 1.14;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: property 250ms;
 }
 
 .navigation:hover {
-  transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color: 0.2s;
   color: var(--hover-links-color);
 }
 
 .navigation:focus {
   color: var(--hover-links-color);
-  transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color: 0.2s;
 }
 
 .navigation:active {
@@ -198,16 +196,14 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--p-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: property 250ms;
 }
 .top-contact:hover {
   color: var(--hover-links-color);
-  transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color: 0.2s;
 }
 .top-contact1:hover {
   color: var(--hover-links-color);
-  transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color: 0.2s;
 }
 
 .main {
@@ -240,6 +236,7 @@ body {
   align-content: center;
   margin-right: 8px;
   font-weight: 500;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .buttons-container {
@@ -260,7 +257,6 @@ body {
   /* shadow-middle */
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-main {
@@ -274,17 +270,14 @@ body {
   font-size: 16px;
   font-weight: 700;
   font-family: "Roboto";
-  transition: 0.2s;
-  transition-property: background-color: 0.2s;
-  
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: property 250ms;
 }
 
 .button-main:hover {
   box-shadow: 2px 2px 10px var(--darkgrey);
   background-color: var(--p-color);
   transform: scale(1.05) translateY(0.125rem);
-  transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color: 0.2s;
 }
 
 .buttons-container :hover {
@@ -387,13 +380,13 @@ body {
   text-align: center;
   color: var(--p-color);
   background: #ffffff;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: property 250ms;
 }
 
 .portfolio-description:hover {
   cursor: pointer;
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
-  transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color: 0.2s;
 }
 
 .background-main {
@@ -523,12 +516,12 @@ body {
   padding-bottom: 9px;
 
   color: rgba(255, 255, 255, 0.6);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: property 250ms;
 }
 .contact-bottom:hover {
   color: var(--hover-links-color);
   cursor: pointer;
-  transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color: 0.2s;
 }
 
 .phone-bottom {
@@ -539,12 +532,12 @@ body {
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: property 250ms;
 }
 .phone-bottom:hover {
   color: var(--hover-links-color);
   cursor: pointer;
-  transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color: 0.2s;
 }
 
 .footer-container {
@@ -561,14 +554,14 @@ body {
   justify-content: center;
   align-items: center;
   fill: var(--grey);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: property 250ms;
 }
 .icon-spacing {
   margin-right: 10px;
 }
 .icons-header:hover {
   fill: var(--hover-links-color);
-  transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color: 0.2s;
 }
 
 .speciality-icons {
@@ -595,6 +588,8 @@ body {
   background-color: var(--semi-text-color);
   fill: var(--iconcolor);
   border-radius: 50%;
+  transition: 2050ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: property 250ms;
 }
 
 .card-icons:hover {
@@ -602,8 +597,6 @@ body {
   cursor: pointer;
   background-color: var(--hover-links-color);
   border-color: var(--hover-links-color);
-  transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color: 0.2s;
 }
 
 .section-clients {
@@ -628,12 +621,12 @@ body {
   color: var(--iconcolor);
   border: 1px solid rgba(175, 177, 184, 1);
   fill: var(--iconcolor);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: property 250ms;
 }
 .client-logo:hover {
   border-color: var(--hover-links-color);
   fill: var(--hover-links-color);
-  transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color: 0.2s;
 }
 
 .footer-header {
@@ -663,11 +656,11 @@ body {
   border-radius: 50%;
   background-color: var(--footericon);
   fill: var(--semi-text-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: property 250ms;
 }
 .footer-icon:hover {
   background-color: var(--hover-links-color);
-  transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color: 0.2s;
 }
 
 .backdrop {
@@ -705,7 +698,7 @@ body {
   visibility: hidden;
   pointer-events: none;
   transition: 250ms ease-in;
-  transition-property: background-color: 0.2s;
+  transition-property: property 250ms;
 }
 
 .picture-description {
@@ -731,10 +724,12 @@ figure {
   max-width: 370px;
   max-height: 294px;
   overflow: hidden;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: property 250ms;
 }
 
 .product-anime {
-  transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(100%);
   background-color: rgba(33, 150, 243, 0.9);
   display: inline-block;
@@ -747,12 +742,10 @@ figure {
   padding-left: 24px;
   padding-top: 20px;
   text-align: left;
-  transition-property: none;
+  transition-property: property 250ms;
 }
 .product-info:hover .product-anime {
   transform: translateY(0);
-  transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color: 0.2s;
 }
 
 .page-actives::after {
@@ -765,4 +758,9 @@ figure {
   background-color: var(--hover-links-color);
   transform: translateY(31px);
   border-radius: 2px;
+}
+
+.close-area {
+  height: 20px;
+  width: 20px;
 }

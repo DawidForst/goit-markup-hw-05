@@ -176,7 +176,7 @@ body {
   background-repeat: no-repeat;
 
   background-color: var(--background-main);
-  background-blend-mode: difference;
+
   color: var(--semi-text-color);
 }
 .li-contact {

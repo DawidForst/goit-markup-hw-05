@@ -146,7 +146,7 @@ body {
   color: var(--h-color);
   line-height: 1.14;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: property 250ms;
+  transition-property: color;
 }
 
 .navigation:hover {
@@ -203,7 +203,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--p-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: property 250ms;
+  transition-property: fill, color;
 }
 .top-contact:hover {
   color: var(--hover-links-color);
@@ -277,7 +277,7 @@ body {
   font-weight: 700;
   font-family: "Roboto";
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: property 250ms;
+  transition-property: background-color, transform;
 }
 
 .button-main:hover {
@@ -376,18 +376,18 @@ body {
   border-left: 1px solid #eeeeee;
 }
 .portfolio-description {
+  overflow: hidden;
   font-size: 16px;
   line-height: 1.875;
   /* border: 1px solid #eeeeee; */
   /* identical to box height, or 188% */
   flex-basis: calc((100% - 60px) / 3);
-
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--p-color);
   background: #ffffff;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: property 250ms;
+  transition-property: box-shadow;
 }
 
 .portfolio-description:hover {
@@ -523,7 +523,7 @@ body {
 
   color: rgba(255, 255, 255, 0.6);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: property 250ms;
+  transition-property: color;
 }
 .contact-bottom:hover {
   color: var(--hover-links-color);
@@ -539,7 +539,7 @@ body {
 
   color: rgba(255, 255, 255, 0.6);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: property 250ms;
+  transition-property: color;
 }
 .phone-bottom:hover {
   color: var(--hover-links-color);
@@ -561,7 +561,7 @@ body {
   align-items: center;
   fill: var(--grey);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: property 250ms;
+  transition-property: color, fill;
 }
 .icon-spacing {
   margin-right: 10px;
@@ -595,7 +595,7 @@ body {
   fill: var(--iconcolor);
   border-radius: 50%;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: property 250ms;
+  transition-property: fill, background-color;
 }
 
 .card-icons:hover {
@@ -628,7 +628,7 @@ body {
   border: 1px solid rgba(175, 177, 184, 1);
   fill: var(--iconcolor);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: property 250ms;
+  transition-property: fill, border-color;
 }
 .client-logo:hover {
   border-color: var(--hover-links-color);
@@ -663,7 +663,7 @@ body {
   background-color: var(--footericon);
   fill: var(--semi-text-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: property 250ms;
+  transition-property: background-color;
 }
 .footer-icon:hover {
   background-color: var(--hover-links-color);
@@ -704,7 +704,7 @@ body {
   visibility: hidden;
   pointer-events: none;
   transition: 250ms ease-in;
-  transition-property: property 250ms;
+  transition-property: visibility;
 }
 
 .picture-description {
@@ -731,7 +731,7 @@ figure {
   max-height: 294px;
   overflow: hidden;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: property 250ms;
+  transition-property: transform;
 }
 
 .product-anime {
@@ -748,10 +748,21 @@ figure {
   padding-left: 24px;
   padding-top: 20px;
   text-align: left;
-  transition-property: property 250ms;
+  transition-property: transform;
+  max-width: 370px;
+  max-height: 294px;
 }
-.product-info:hover .product-anime {
+.portfolio-description:hover .product-anime {
   transform: translateY(0);
+}
+
+.transform {
+  transform: translateY(0);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(100%);
+  background-color: rgba(33, 150, 243, 0.9);
+  display: inline-block;
+  position: relative;
 }
 
 .page-actives::after {
